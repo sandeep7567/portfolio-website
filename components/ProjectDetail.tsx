@@ -37,11 +37,11 @@ const ProjectDetail = ({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className=" group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
         className="relative bg-gray-100 rounded-lg max-w-[42rem] border border-black/5 
-    overflow-hidden sm:pr-8 sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-200 transition
+    overflow-hidden sm:pr-8 sm:h-[22rem] sm:group-even:pl-8 hover:bg-gray-200 transition
      dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
         <div
@@ -77,10 +77,10 @@ const ProjectDetail = ({
               href={liveLink}
               target="_blank"
               className="flex justify-center items-center gap-2 hover:scale-110 focus:scale-100 
-            bg-white/[0.7] bg-opacity-30 hover:bg-opacity-50 shadow-lg w-20 h-8 
+            bg-white/[0.7] bg-opacity-30 hover:bg-opacity-50 shadow-lg w-24 h-8 
             rounded-lg text-sm leading-relaxed 
             text-gray-700 dark:text-white/70 dark:bg-black/60 transition-all duration-300">
-              {link}live link
+              {link}Live Link
             </a>
           </div>
           
@@ -90,7 +90,7 @@ const ProjectDetail = ({
           src={imageUrl}
           alt={"Project I worked on"}
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-14 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

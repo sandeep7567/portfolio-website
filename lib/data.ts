@@ -78,7 +78,9 @@ export const projectsData = [
   {
     title: "StudyNotion-LMS",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      `Emerged as a MERN StudyNotion LMS with UI, auth, OTP, Razorpay, 
+      multi-role access, and ratings.
+      `,
     tags: ["MERN", "React", "Redux Toolkit", "Express.Js", "MongoDB", "Tailwind", "Node.Js"],
     imageUrl: corpcommentImg,
     icon: React.createElement(FaGithubSquare),
@@ -89,8 +91,8 @@ export const projectsData = [
   {
     title: "Portfolio Website",
     description:
-    "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "Tailwind", "Framer"],
+    `Sandeep Thakur's Portfolio: Showcasing projects, skills, experience, and contact.`,
+    tags: ["React", "Next.js", "Tailwind", "Framer Motion", "React Email", "Resend", ],
     imageUrl: wordanalyticsImg,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
@@ -100,7 +102,7 @@ export const projectsData = [
   {
     title: "Feedback-Board",
     description:
-    "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    `Feedback Board (MERN) with CRUD functinality. Post, comment, vote, filter, sorting, pagination and more for dynamic interactions!`,
     tags: ["MERN", "React", "Next.js", "Redux Toolkit", "Express.Js", "MongoDB", "Tailwind", "Node.Js"],
     imageUrl: rmtdevImg,
     icon: React.createElement(FaGithubSquare),
@@ -109,10 +111,10 @@ export const projectsData = [
     liveLink: "https://feedback-board-mu.vercel.app/",
   },
   {
-    title: "Spotify Clone",
+    title: "Spotify-Clone",
     description:
-    "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "PostSQL", "Tailwind", "Framer"],
+    `Elevate your music journey with our Spotify Clone, featuring advanced design and features for seamless song upload and streaming.`,
+    tags: ["React", "Next.js", "PostSQL", "Tailwind", "Framer", "Supabase-basic learning"],
     imageUrl: wordanalyticsImg,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
@@ -122,7 +124,7 @@ export const projectsData = [
   {
     title: "Razorpay-Clone",
     description:
-    "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    "A Razorpay Landing Page Clone, skillfully designed using HTML and Tailwind CSS, to demonstrate my expertise in harnessing Tailwind's efficient styling capabilities",
     tags: ["Tailwind",],
     imageUrl: wordanalyticsImg,
     icon: React.createElement(FaGithubSquare),
