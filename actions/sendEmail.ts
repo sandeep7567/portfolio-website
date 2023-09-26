@@ -11,6 +11,7 @@ const EMAIL_TO = process.env.EMAIL_TO;
 export const sentEmail = async(formData: FormData) => {
 
   const senderEmail = formData.get("senderEmail");
+  const senderName = formData.get("senderName");
   const message = formData.get("message");
 
   //  simple server-side validate input;
@@ -22,6 +23,11 @@ export const sentEmail = async(formData: FormData) => {
   if (!validateString(message, 5000)) {
     return {
       error: "Invalid message"
+    }
+  }
+  if (!validateString(senderName, 5000)) {
+    return {
+      error: "Invalid senderName"
     }
   }
 
@@ -38,6 +44,7 @@ export const sentEmail = async(formData: FormData) => {
       react: React.createElement(EmailTemplate, {
         message: message as string,
         senderEmail: senderEmail as string,
+        senderName: senderName as string,
       })
     });
   } catch (error: unknown) {

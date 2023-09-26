@@ -14,9 +14,10 @@ import { Tailwind } from "@react-email/components";
 type EmailTemplateProps = {
   message: string;
   senderEmail: string;
+  senderName: string;
 }
 
-const EmailTemplate = ({message, senderEmail}: EmailTemplateProps) => {
+const EmailTemplate = ({message, senderEmail, senderName}: EmailTemplateProps) => {
   return (
     <Html>
       <Preview>New Message from your portfolio site</Preview>
@@ -25,6 +26,7 @@ const EmailTemplate = ({message, senderEmail}: EmailTemplateProps) => {
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 rounded-md">
               <Heading className="leading-tight">You received the following message from the contact form</Heading>
+              <Text><span className="font-semibold">Contact:{" "}</span>{senderName}</Text>
               <Text>{message}</Text>
               <Hr/>
               <Text>The sender email is: {senderEmail}</Text>

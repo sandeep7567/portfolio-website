@@ -26,6 +26,7 @@ const Experience = () => {
         <VerticalTimeline
           lineColor=""
           animate={true}
+          layout="1-column"
         >
           {experiencesData.map(
             (exp, index) => (
@@ -52,6 +53,7 @@ const Experience = () => {
                   <h3 className="font-semibold capitalize">{exp.title}</h3>
                   <p className="font-normal !mt-0">{exp.location}</p>
                   <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{exp.description}</p>
+                  <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{exp.megaProject}</p>
                 </VerticalTimelineElement>
               </React.Fragment>
             )

@@ -54,6 +54,14 @@ const Contact = () => {
         }}
       >
         <input   
+          placeholder="Your Name"
+          className="h-14 mb-3 px-4 rounded-lg borderBlack dark:outline-none dark:bg-white/80 dark:focus:bg-white/100 transition-all duration-300"
+          type="text"
+          name="senderName"
+          required
+          maxLength={500}
+        />
+        <input   
           placeholder="Your email"
           className="h-14 px-4 rounded-lg borderBlack dark:outline-none dark:bg-white/80 dark:focus:bg-white/100 transition-all duration-300"
           type="email"

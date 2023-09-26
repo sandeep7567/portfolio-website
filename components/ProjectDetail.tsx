@@ -6,6 +6,7 @@ import { projectsData } from "@/lib/data";
 
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectDetailProps = (typeof projectsData)[number];
 
@@ -14,6 +15,10 @@ const ProjectDetail = ({
   description,
   tags,
   imageUrl,
+  icon,
+  link,
+  gitLink,
+  liveLink,
 }: ProjectDetailProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -41,7 +46,7 @@ const ProjectDetail = ({
       >
         <div
           className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
-      flex flex-col h-full sm:group-even:ml-[18rem]"
+            flex flex-col h-full sm:group-even:ml-[18rem]"
         >
           <h3 className="text-2xl">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -58,6 +63,27 @@ const ProjectDetail = ({
               </li>
             ))}
           </ul>
+          <div className="mt-2 flex justify-between items-center">
+            <a
+              href={gitLink}
+              target="_blank"
+              className="flex justify-center items-center hover:scale-125 shadow-lg drop-shadow-lg focus:scale-100 
+            bg-white/[0.7] w-8 h-8 rounded-full gap-2
+            leading-relaxed text-2xl text-gray-700 dark:text-white/70 dark:bg-black/60
+            transition-all duration-300">
+              {icon}
+            </a>
+            <a
+              href={liveLink}
+              target="_blank"
+              className="flex justify-center items-center gap-2 hover:scale-110 focus:scale-100 
+            bg-white/[0.7] bg-opacity-30 hover:bg-opacity-50 shadow-lg w-20 h-8 
+            rounded-lg text-sm leading-relaxed 
+            text-gray-700 dark:text-white/70 dark:bg-black/60 transition-all duration-300">
+              {link}live link
+            </a>
+          </div>
+          
         </div>
 
         <Image

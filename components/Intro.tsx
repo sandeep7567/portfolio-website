@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import Link from "next/link";
+import profilePicture from "@/public/profilepicture.jpg";
 
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { BsArrowRight } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import useSectionInView from "@/lib/hooks";
@@ -32,9 +33,12 @@ const Intro = () => {
               duration: 0.2,
             }}
           >
+            {/* <div className="h-24 w-24 rounded-full border-[0.35rem]
+              border-white object-cover shadow-xl bg-gray-500"></div> */}
+
             <Image
               src={
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+                profilePicture || "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
               }
               alt="portfolio profile"
               width={192}
@@ -109,7 +113,7 @@ const Intro = () => {
           transition" />
         </a>
 
-        <a
+        {/* <a
           className="bg-white p-4 text-gray-700
            hover:text-gray-950 flex items-center gap-2 rounded-full 
            focus:scale-[1.15] hover:scale-[1.15] active:scale-105 
@@ -119,7 +123,7 @@ const Intro = () => {
           target="_blank"
         >
           <BsLinkedin />
-        </a>
+        </a> */}
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 
