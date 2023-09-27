@@ -1,11 +1,13 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+// import { CgWorkAlt } from "react-icons/cg";
 import { FaGithubSquare, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { BiLink } from "react-icons/bi";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import studynotion from "@/public/studynotion.png";
+import sandeepportfolio from "@/public/sandeepportfolio.png";
+import feedbackboard from "@/public/feedbackboard.png";
+import spotifyclone from "@/public/spotifyclone.png";
+import razorpayclone from "@/public/razorpayclone.png";
 
 export const links = [
   {
@@ -82,7 +84,7 @@ export const projectsData = [
       multi-role access, and ratings.
       `,
     tags: ["MERN", "React", "Redux Toolkit", "Express.Js", "MongoDB", "Tailwind", "Node.Js"],
-    imageUrl: corpcommentImg,
+    imageUrl: studynotion,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/StudyNotion-A-Learning-Management-System",
@@ -93,7 +95,7 @@ export const projectsData = [
     description:
     `Sandeep Thakur's Portfolio: Showcasing projects, skills, experience, and contact.`,
     tags: ["React", "Next.js", "Tailwind", "Framer Motion", "React Email", "Resend", ],
-    imageUrl: wordanalyticsImg,
+    imageUrl: sandeepportfolio,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/portfolio-website",
@@ -104,7 +106,7 @@ export const projectsData = [
     description:
     `Feedback Board (MERN) with CRUD functinality. Post, comment, vote, filter, sorting, pagination and more for dynamic interactions!`,
     tags: ["MERN", "React", "Next.js", "Redux Toolkit", "Express.Js", "MongoDB", "Tailwind", "Node.Js"],
-    imageUrl: rmtdevImg,
+    imageUrl: feedbackboard,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/Feedback-Board",
@@ -115,7 +117,7 @@ export const projectsData = [
     description:
     `Elevate your music journey with our Spotify Clone, featuring advanced design and features for seamless song upload and streaming.`,
     tags: ["React", "Next.js", "PostSQL", "Tailwind", "Framer", "Supabase-basic learning"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: spotifyclone,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/spotify-clone",
@@ -126,7 +128,7 @@ export const projectsData = [
     description:
     "A Razorpay Landing Page Clone, skillfully designed using HTML and Tailwind CSS, to demonstrate my expertise in harnessing Tailwind's efficient styling capabilities",
     tags: ["Tailwind",],
-    imageUrl: wordanalyticsImg,
+    imageUrl: razorpayclone,
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/Razorpay-Clone",
