@@ -6,7 +6,6 @@ import { projectsData } from "@/lib/data";
 
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
-import Link from "next/link";
 
 type ProjectDetailProps = (typeof projectsData)[number];
 
