@@ -66,19 +66,21 @@ const ProjectDetail = ({
             <a
               href={gitLink}
               target="_blank"
-              className="flex justify-center items-center hover:scale-125 shadow-lg drop-shadow-lg focus:scale-100 
-            bg-white/[0.7] w-8 h-8 rounded-full gap-2
-            leading-relaxed text-2xl text-gray-700 dark:text-white/70 dark:bg-black/60
-            transition-all duration-300">
+              className="flex justify-center items-center hover:scale-[1.18] shadow-lg 
+            drop-shadow-lg focus:scale-100 dark:shadow-lg dark:drop-shadow-lg rounded-md gap-2
+            leading-relaxed text-2xl text-gray-700 dark:text-white/70 dark:bg-gray-950/60
+            transition-all duration-300 active:scale-105 disabled:scale-100 disabled:bg-opacity-60
+            dark:bg-opacity-10">
               {icon}
             </a>
             <a
               href={liveLink}
               target="_blank"
               className="flex justify-center items-center gap-2 hover:scale-110 focus:scale-100 
-            bg-white/[0.7] bg-opacity-30 hover:bg-opacity-50 shadow-lg w-24 h-8 
-            rounded-lg text-sm leading-relaxed 
-            text-gray-700 dark:text-white/70 dark:bg-black/60 transition-all duration-300">
+            bg-white/[0.7] bg-opacity-30 hover:bg-opacity-50 shadow-lg w-24 h-8 dark:shadow-lg dark:drop-shadow-lg
+            rounded-full text-sm leading-relaxed active:scale-105 disabled:scale-100 disabled:bg-opacity-60
+            text-gray-700 dark:text-white/70 dark:bg-gray-950/60
+            transition-all duration-300">
               {link}Live Link
             </a>
           </div>
