@@ -99,7 +99,7 @@ export const projectsData = [
     icon: React.createElement(FaGithubSquare),
     link: React.createElement(BiLink),
     gitLink: "https://github.com/sandeep7567/portfolio-website",
-    liveLink: "https://github.com/sandeep7567/portfolio-website",
+    liveLink: "https://sandeepthakurportfolio.vercel.app/",
   },
   {
     title: "Feedback-Board",
