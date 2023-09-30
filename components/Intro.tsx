@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePicture from "@/public/profilepicture.jpg";
 
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import useSectionInView from "@/lib/hooks";
@@ -108,7 +108,7 @@ const Intro = () => {
           href={"/SandeepThakurResume.pdf"}
           download
         >
-          Download CV{" "}
+          Download CV{""}
           <HiDownload className="opacity-60 group-hover:translate-y-2 
           transition" />
         </a>
